@@ -5,8 +5,14 @@
     font-family: sans-serif;
     text-transform: capitalize;
 }
+::-webkit-scrollbar{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,var(--main-color),transparent);
+}
 :root{
-    --main-color: #ffc400;
+    --main-color: #ffae00;
     --alt-color: #8b5ae0;
 }
 body{
