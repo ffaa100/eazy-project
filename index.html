@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <!-- css files -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- framewoork [bootstrap] css-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- framewoork [bootstrap] js-->
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/cdn.jsdelivr.net_npm_@popperjs_core@2.9.2_dist_umd_popper.min.js"></script>
+    <script src="js/bootstrap.js" defer></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- javascript  -->
+    <script src="js/script.js" defer></script>
+    <!-- framework [vue js] -->
+    <title>Amer 🧠</title>
+</head>
+<body>
+    <div class="page" id="capiqal">
+        <header>
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="" id="home" style="color:black"><h2>cap<span>iq</span>al</h2></a>
+                </div>
+                <div class="filter">
+                    <ul class="list-unstyled m-0">
+                        <li>
+                            <a href="#home" class="text-decoration-none">home</a>
+                        </li>
+                        <li>
+                            <a href="#grant" class="text-decoration-none">grant</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="text-decoration-none">services</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-decoration-none">about us</a>
+                        </li>
+                        <li>
+                            <a href="#team" class="text-decoration-none">our team</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button>contact us</button>
+                    <button :condition="condition" :class="condition == true ? 'true' : 'false' "  @click="icon" :style="condition == true ? 'background: var(--main-color);' : 'background:'">
+                        <i class="fa-solid fa-bars-staggered" v-if="condition == true"></i>
+                        <i class="fa-solid fa-bars" v-else></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- START header -->
+        <!-- END header -->
+        <!-- START landing -->
+        <section class="landing" id="home">
+            <div class="container d-flex">
+                <div class="text">
+                    <h3 class="m-0">grand foundin</h3>
+                    <h3 class="my-4 title">support through planning, process & excution</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet. voluptate iure maxime, molestias iusto sequi pariatur!</p>
+                    <button>contact us</button>
+                </div>
+            </div>
+        </section>
+        <!-- END landing -->
+        <!-- START grant -->
+        <section class="grant" id="grant">
+            <div class="container">
+                <h5 class="text-center fw-bolder mb-3">grant providere web work with</h5>
+                <div class="row mt-4">
+                    <div class="company col-6 col-md-2">
+                        <i class="fa-solid fa-taxi"></i>
+                    </div>
+                    <div class="company col-6 col-md-6 col-lg-2">
+                        <i class="fa-brands fa-usps"></i>
+                    </div>
+                    <div class="company col-6 col-md-2">
+                        <i class="fa-solid fa-building h-100 w-100 d-flex justify-content-center align-items-center"></i>
+                    </div>
+                    <div class="company col-6 col-md-2">
+                        <i class="fa-solid fa-stopwatch-20"></i>
+                    </div>
+                    <div class="company col-6 col-md-2">
+                        <i class="fa-solid fa-tower-observation"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- START grant -->
+        <!-- START services -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="row justify-content-center gap-5">
+                    <div class="box col-11 col-md-5 col-lg-3 text-center">
+                        <i class="fa-solid fa-rectangle-list"></i>
+                        <h5>preprea</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ab? Cum praesentium quasi aut minima, vitae consectetur odio nostrum </p>
+                        <a href="#">oreder now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="box col-11 col-md-5 col-lg-3 text-center">
+                        <i class="fa-solid fa-spa"></i>
+                        <h5><i class="mdi mdi-color-helper:"></i></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ab? Cum praesentium quasi aut minima, vitae consectetur odio nostrum </p>
+                        <a href="#">oreder now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="box col-11 col-md-5 col-lg-3 text-center">
+                        <i class="fa-solid fa-palette"></i>
+                        <h5>mangement</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ab? Cum praesentium quasi aut minima, vitae consectetur odio nostrum </p>
+                        <a href="#">oreder now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END services -->
+        <!-- START about -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="text">
+                    <h2>what do we do ? </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem numquam nisi?</p>
+                    <p class="explain">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque incidunt voluptatum explicabo consequuntur dolore ipsa minus quas delectus odit sapiente?</p>
+                    <a href="#">contact us</a>
+                </div>
+            </div>
+        </section>
+        <!-- END about -->
+        <!-- START statistics -->
+        <div class="statistics">
+            <div class="container">
+                <h3>by the numbers</h3>
+                <div class="row justify-content-center gap-5">
+                    <div class="box col-11 col-md-5 col-lg-2">
+                        <h2>60%</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="box col-11 col-md-5 col-lg-2">
+                        <h2>20%</h2>
+                        <p>Lorem ipsum dolor .</p>
+                    </div>
+                    <div class="box col-11 col-md-5 col-lg-2">
+                        <h2>64%</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="box col-11 col-md-5 col-lg-2">
+                        <h2>54%</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END statistics -->
+        <!-- START team -->
+        <div class="team" id="team">
+            <div class="container">
+                <div class="header">
+                    <div class="text">
+                        <h2>some of our team</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas dolorum aliquam quaerat velit?</p>
+                    </div>
+                    <div class="button">
+                        <button>meet the full team</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="card p-0 col-9 col-md-5 col-lg-3">
+                        <img src="imgs/team1.png" alt="" class="w-100 mb-3">
+                        <div class="text ms-4">
+                            <h4>rob monen</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="card p-0 col-9 col-md-5 col-lg-3">
+                        <img src="imgs/team2.jpg" alt="" class="w-100 mb-3">
+                        <div class="text ms-4">
+                            <h4>rob monen</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="card p-0 col-9 col-md-5 col-lg-3">
+                        <img src="imgs/team3.jpg" alt="" class="w-100 mb-3">
+                        <div class="text ms-4">
+                            <h4>rob monen</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END team -->
+        <!-- START footer -->
+        <footer>
+            <!-- START contact -->
+            <section class="contact">
+                <div class="container text-center">
+                    <h3>accelerate your inovation</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, accusantium?</p>
+                    <a href="#">talk to us now</a>
+                </div>
+            </section>
+            <!-- END contact -->
+            <div class="container d-flex">
+                <div class="row w-100 justify-content-center align-items-center">
+                    <div class="col-10 col-md-3">
+                        <div class="logo">
+                            <a href="#home" id="footer" style="color:white"><h2>cap<span>iq</span>al</h2></a>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mt-2">ireland cirice:</li>
+                            <li>unit 2a m4 busniness park</li>
+                            <li class="mt-2">cldrdgo co, dliddre w32</li>
+                            <li class="mt-2">pw2k,ireland</li>
+                            <li class="mt-2">email: amer22wild@gmail.com</li>
+                        </ul>
+                    </div>
+                    <ul class="list-unstyled col-10 col-md-3">
+                        <li>prepare : </li>
+                        <li class="mt-2">business pains</li>
+                        <li class="mt-2">feasibility studies</li>
+                        <li class="mt-2">market ressarch</li>
+                        <li class="mt-2">documnet bandk creation</li>
+                        <li class="mt-2">consortum bukding</li>
+                    </ul>
+                    <ul class="list-unstyled col-10 col-md-3">
+                        <li>find : </li>
+                        <li class="mt-2">audit and scope report</li>
+                        <li class="mt-2">grant applications</li>
+                        <li class="mt-2">grant funding active</li>
+                        <li class="mt-2">assassment and submission</li>
+                    </ul>
+                    <ul class="list-unstyled col-10 col-md-3">
+                        <li>manage : </li>
+                        <li class="mt-2">grant compliance</li>
+                        <li class="mt-2">drawdown mangement</li>
+                        <div class="list-unstyled d-flex gap-3 align-items-center mt-2">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-youtube"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- END footer -->
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        let vue = new Vue({
+            el: '#capiqal',
+            data: {
+                condition: false,
+                visibility: 'hidden'
+            },
+            methods:{
+                icon:function(){
+                    this.condition == true ? this.condition = false : this.condition = true
+                },
+            }
+        })
+    </script>
+</body>
+</html>
